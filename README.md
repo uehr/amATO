@@ -9,7 +9,7 @@
 
 ### 技術要素
 - npmモジュールとして公開
-- `npm install -g` で誰でも利用可能に
-- Markdownの独自記法を作る
+- `npm install amato -g` で誰でも利用可能に
+- Markdownの独自記法を定義
     - <<.hoge#fuga>>でクラスやIDが適用できたり
     - [[rocket]]とかでfontawesomeに変換されたり
