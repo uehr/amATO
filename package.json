@@ -15,7 +15,7 @@
         "type": "git",
         "url": "git+https://github.com/uehr/amato.git"
     },
-    "author": "Yudai Uehara",
+    "author": "@uehr37",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/uehr/amato/issues"
