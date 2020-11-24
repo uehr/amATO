@@ -103,7 +103,6 @@ class HtmlConverter {
 
         const slides_html: string = marked(amato_markdown)
         const design_css = this.designs[design_type]
-        console.log("design: " + design_css)
         const generated_html: string = this.template_html
             .replace("{{ui-css}}", this.ui_style)
             .replace("{{ui-script}}", this.ui_script)
