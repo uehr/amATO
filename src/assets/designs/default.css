@@ -5,6 +5,7 @@
     --main-light-theme-color: #00e091;
     --main-dark-font-color: #282c34;
     --main-dark-theme-color: #1aac5d;
+    --align-left-lr-margin: 10vw;
 }
 
 html {
@@ -32,8 +33,13 @@ body {
     text-align: left;
     font-size: 2rem;
     margin: auto;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: var(--align-left-lr-margin);
+    margin-right: var(--align-left-lr-margin);
+}
+
+ol {
+    margin: 0;
+    padding: 0;
 }
 
 code {
@@ -51,6 +57,8 @@ pre .with-filename {
 pre {
     text-align: left;
     position: relative;
+    margin-left: var(--align-left-lr-margin) !important;
+    margin-right: var(--align-left-lr-margin) !important;
 }
 
 pre .filename{
@@ -70,7 +78,6 @@ pre .filename+ *{
 }
 
 .list-icon {
-    color: var(--main-light-theme-color);
     font-size: 80%;
     margin-right: 1rem;
 }
