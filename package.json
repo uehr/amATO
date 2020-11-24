@@ -8,7 +8,7 @@
     ],
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "tsc",
+        "build": "node assetsToJson.js && tsc",
         "prepublishOnly": "npm run build"
     },
     "repository": {
@@ -22,9 +22,12 @@
     },
     "homepage": "https://github.com/uehr/amato#readme",
     "devDependencies": {
+        "@types/marked": "^1.2.0",
+        "@types/node": "^14.14.9",
         "typescript": "^3.3.4000"
     },
     "dependencies": {
-        "ytdl": "^1.3.5"
+        "json-loader": "^0.5.7",
+        "marked": "^1.2.5"
     }
 }

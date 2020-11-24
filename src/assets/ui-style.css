@@ -1,0 +1,20 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+#slide-num {
+    font-family: "Lato", "M PLUS 1p";
+    position: fixed;
+    margin: 0;
+    right: 0;
+    bottom: 2px;
+    background-color: var(--main-dark-bg-color);
+    padding: 0 1rem;
+    opacity: 0.8;
+    font-size: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--main-light-bg-color);
+    border-radius: 10px 0 0 10px;
+}
