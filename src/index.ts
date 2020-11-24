@@ -19,9 +19,9 @@ class HtmlConverter {
         this.template_html = assets["template-html"]
 
         for(let design of assets["designs"]) {
-            const splited = design.split("::")
+            const splited = design.split(":")
             const name: string = splited[0]
-            const css: string = splited.slice(1).join("::")
+            const css: string = splited.slice(1).join(":")
             this.designs[name] = css
         }
 
