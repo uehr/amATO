@@ -40,7 +40,17 @@ class HtmlConverter {
             const language_class = attrs_loaded.without_attrs ? "language-" + attrs_loaded.without_attrs : ""
             const classes = attrs_loaded.attrs.class.join(" ")
             const ids = attrs_loaded.attrs.id.join(" ")
-            return `<pre><code class="${language_class} ${classes}" id="${ids}">${code}</code></pre>`
+
+            const delimiter = ':';
+            const info = infostring.split(delimiter);
+            const lang = info.shift();
+            const file_name = info.join(delimiter); // 2つ目以降のdelimiterはファイル名として扱う
+            if (file_name) {
+                const file_tag = '<code class="filename language-plaintext">'+file_name+'</code>'
+                return `<pre>${file_tag}<code class="${language_class} ${classes} with-filename" id="${ids}">${code}</code></pre>`
+            }else{
+                return `<pre><code class="${language_class} ${classes}" id="${ids}">${code}</code></pre>`
+            }
         }
 
         this.renderer.blockquote = (quote: string): string => {

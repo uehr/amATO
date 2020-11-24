@@ -36,6 +36,39 @@ body {
     margin-right: 10vw;
 }
 
+code {
+    font-size: 1rem;
+    border-radius: 3px;
+    text-align: left;
+    display: inline-block;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+pre .with-filename {
+    padding-top: 2.5rem !important;
+}
+
+pre {
+    text-align: left;
+    position: relative;
+}
+
+pre .filename{
+    font-size: 0.8rem;
+    background-color: #707070;
+    display: inline-block;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding: 0.1rem 0.5rem !important;
+    border-radius: 0 0 3px 0;
+}
+
+pre .filename+ *{
+    display: block;
+}
+
 .list-icon {
     color: var(--main-light-theme-color);
     font-size: 80%;
