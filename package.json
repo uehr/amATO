@@ -1,6 +1,6 @@
 {
     "name": "amato",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Markdownでちょっとリッチなプレゼン資料を",
     "main": "dist/index.js",
     "files": [
